@@ -40,10 +40,12 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="EditarPub1.aspx">EDITAR</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Usuario.aspx">REGISTRAR</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="EdiUsu.aspx">ACTUALIZAR</a></li>
+                        <li class="nav-item"><asp:LinkButton ID="LinkButton1" runat="server" CssClass="nav-link js-scroll-trigger" OnClick="LinkButton1_Click">Cerrar Sesion</asp:LinkButton></li>
                     </ul>
                 </div>            
         </nav>
      <div class="baseform">
+         <div style="width:60%; margin-left:20%;">
         <p><h2>Editar Usuario</h2></p>
             <div class="fila col10L">
                 <input class="formulario" placeholder="Nombre (Juan)" id="Nombre" type="text"  runat="server"/>            
@@ -69,6 +71,7 @@
             <div class="fila col10L">                
                 <asp:Button class="botonsubmit" value="REGISTRARME" type="submit"  runat="server" CssClass="botonsubmit"  OnClick="Unnamed1_Click"  Text="EDITAR USUARIO"/>            
             </div>
+             </div>
         </div>
         <footer class="footer py-4">
             <div class="container">

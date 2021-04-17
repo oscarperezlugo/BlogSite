@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BlogSite._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="En.aspx.cs" Inherits="BlogSite.En" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <form runat="server">
@@ -11,12 +11,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Lineas de Investigación</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#opinion">Opinión</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Programas</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="En.aspx">English</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">US</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Research lines</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#opinion">Opinion</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Default.aspx">Español</a></li>
                     </ul>
                 </div>
             
@@ -26,8 +26,8 @@
                 <div class="masthead-subheading" data-aos="fade-up"
      data-aos-duration="3000">COLOMBEIA RESEARCH CENTER</div>
                 <div class="masthead-heading text-uppercase" data-aos="fade-up"
-     data-aos-duration="3000">LIDERANDO POR LA DEMOCRACIA</div>
-                <div data-aos="zoom-out-up"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Lo que hacemos</a></div>
+     data-aos-duration="3000">LEADING FOR DEMOCRACY</div>
+                <div data-aos="zoom-out-up"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">What we do</a></div>
             </div>
         </header>
         
@@ -36,8 +36,8 @@
             <div style="width:80%; margin-left:10%;" >
                 
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">NOSOTROS</h2>
-                    <h3 class="section-subheading text-muted">Lo que hacemos y quienes somos</h3>
+                    <h2 class="section-heading text-uppercase">US</h2>
+                    <h3 class="section-subheading text-muted">What we do and who we are</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-6" data-aos="zoom-in">
@@ -46,7 +46,7 @@
                             <i class="fas fa-balance-scale fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">COLOMBEIA</h4>
-                        <p class="text-muted">Colombeia Research Center inicia su andadura con un fuerte compromiso para promover la democracia y la gobernanza efectiva en Latinoamérica desde la perspectiva del liderazgo político</p>
+                        <p class="text-muted">Colombeia Research Center begins its journey with a strong commitment to promote democracy and effective governance in Latin America from the perspective of political leadership</p>
                     </div>
                     <div class="col-md-6" data-aos="zoom-in">
                         <img src="https://colombeia.org/colombeia.org/assets/img/slider2.gif" />
@@ -62,7 +62,7 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/martin.jpg" alt="" />
                             <h4>Jose Miguel Martin</h4>
-                            <p class="text-muted">CONSULTOR GENERAL, ESTRATEGA</p>
+                            <p class="text-muted">GENERAL CONSULTANT, STRATEGIST</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/Josemartinm_"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/Josemartinm_"><i class="fab fa-instagram"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="http://www.linkedin.com/in/josemiguelmartinm"><i class="fab fa-linkedin-in"></i></a>
@@ -72,7 +72,7 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/col1.jpg" alt="" />
                             <h4>José Alberto Alves da Rocha</h4>
-                            <p class="text-muted">ESTUDIANTE DE LENGUAJES</p>
+                            <p class="text-muted">LANGUAGE STUDENT</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/titoalvess"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/titoalvess/?hl=es-la"><i class="fab fa-instagram"></i></a>
                             <%--<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-handshake-o"></i></a>--%>
@@ -84,8 +84,8 @@
     <section class="page-section bg-light" id="about">
             <div style="width:80%; margin-left:10%;">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">LINEAS DE INVESTIGACION</h2>
-                    <h3 class="section-subheading text-muted">Estas son nuestras lineas de investigacion</h3>
+                    <h2 class="section-heading text-uppercase">RESEARCH LINES</h2>
+                    <h3 class="section-subheading text-muted">These are our research lines</h3>
                 </div>
                 <ul class="timeline">
                     <li>
@@ -93,11 +93,11 @@
                         <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/images.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <div data-aos="fade-right"><h4>Liderazgo Latinoamericano</h4>
+                                <div data-aos="fade-right"><h4>Latin American Leadership</h4>
                                 <%--<h4 class="subheading">Lorem ipsum dolor sit amet</h4></div>--%>
                             </div>
-                            <div class="timeline-body" data-aos="fade-right"><p class="text-muted">Latinoamérica entró al siglo XXI como una región plenamente democrática con tan solo
-unas pocas excepciones como Cuba. </p></div>
+                            <div class="timeline-body" data-aos="fade-right"><p class="text-muted">Latin America entered the 21st century as a fully democratic region with only
+a few exceptions like Cuba. </p></div>
                         </div>
                             </a>
                     </li>
@@ -106,11 +106,11 @@ unas pocas excepciones como Cuba. </p></div>
                         <div class="timeline-image" data-aos="fade-left"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Sintítulo-1.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <div data-aos="fade-left"><h4>Instituciones Democráticas Regionales</h4>
+                                <div data-aos="fade-left"><h4>Regional Democratic Institutions</h4>
      <%--                           <h4 class="subheading">Lorem ipsum dolor sit amet</h4></div>--%>
                             </div>
-                            <div class="timeline-body" data-aos="fade-left"><p class="text-muted">Una democracia es tan fuerte como la más débil de sus
-instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir gobiernos formales
+                            <div class="timeline-body" data-aos="fade-left"><p class="text-muted">A democracy is only as strong as the weakest of its
+institutions. Latin America struggled during the 19th and 20th centuries to build formal governments
 </p></div>
                         </div>
                             </a>
@@ -120,10 +120,10 @@ instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir 
                         <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/col3.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <div data-aos="fade-right"><h4>Crisis Venezolana</h4>
+                                <div data-aos="fade-right"><h4>Venezuelan Crisis</h4>
                                <%-- <h4 class="subheading">Lorem ipsum dolor sit amet</h4></div>--%>
                             </div>
-                            <div class="timeline-body" data-aos="fade-right"><p class="text-muted">La crisis humanitaria de Venezuela y la migración masiva que ha producido es uno de los problemas más importantes de Latinoamérica</p></div>
+                            <div class="timeline-body" data-aos="fade-right"><p class="text-muted">The humanitarian crisis in Venezuela and the massive migration that it has produced is one of the most important problems in Latin America</p></div>
                         </div>
                             </a>
                     </li>
@@ -177,8 +177,8 @@ instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir 
         <section class="page-section bg-light" id="portfolio">
             <div style="width:80%; margin-left:10%;">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">NUESTROS PROGRAMAS</h2>
-                    <h3 class="section-subheading text-muted">Para promover la buena gobernanza resulta necesario ser capaces de dar apoyo y entrenamiento a los líderes </h3>
+                    <h2 class="section-heading text-uppercase">OUR PROGRAMS</h2>
+                    <h3 class="section-subheading text-muted">To promote good governance, it is necessary to be able to support and train leaders</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-sm-6 mb-4">
@@ -191,7 +191,7 @@ instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir 
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">LEANDER</div>
-                                <div class="portfolio-caption-subheading text-muted">Liderazgo</div>
+                                <div class="portfolio-caption-subheading text-muted">Leadership</div>
                             </div>
                         </div>
                     </div>
@@ -230,15 +230,15 @@ instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir 
     <section class="page-section" id="contact">
             <div style="width:80%; margin-left:10%;">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Dinos lo que deseas</h2>
-                    <h3 class="section-subheading text-muted">Nosotros estamos entusiasmados por leer tus inquietudes.</h3>
+                    <h2 class="section-heading text-uppercase">Tell us what you want</h2>
+                    <h3 class="section-subheading text-muted">We are excited to read your concerns.</h3>
                 </div>
 
                 <form id="contactForm" name="sentMessage" novalidate="novalidate">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder="Nombre *" required="required" data-validation-required-message="Nombre." runat="server"/>
+                                <input class="form-control" id="name" type="text" placeholder="Name *" required="required" data-validation-required-message="Nombre." runat="server"/>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
@@ -246,7 +246,7 @@ instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir 
                                 <p class="help-block text-danger"></p>
                             </div>
                              <div class="form-group">
-                                <input class="form-control" id="phone" type="tel" placeholder="Teléfono *" required="required" data-validation-required-message="Teléfono." runat="server"/>
+                                <input class="form-control" id="phone" type="tel" placeholder="Phone Number *" required="required" data-validation-required-message="Teléfono." runat="server"/>
                                 <p class="help-block text-danger"></p>
                             </div>
 
@@ -255,15 +255,14 @@ instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir 
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <textarea class="form-control" id="message" placeholder="Mensaje *" required="required" data-validation-required-message="Mensaje." runat="server"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Message *" required="required" data-validation-required-message="Mensaje." runat="server"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                     </div>
                     <div class="text-center">
                         <div id="success"></div>
-                        <asp:Button ID="sendMessageButton" runat="server" Text="Enviar" CssClass="btn btn-primary btn-xl text-uppercase" OnClick="enviar" type="submit"  />
-                        
+                        <asp:Button ID="sendMessageButton" runat="server" Text="SEND" CssClass="btn btn-primary btn-xl text-uppercase" OnClick="enviar" type="submit"  />
                     </div>
                 </form>
             </div>
@@ -282,32 +281,32 @@ instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir 
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">LEANDER</h2>
-                                    <p class="item-intro text-muted">Apoyo y Entrenamiento a los líderes</p>
+                                    <p class="item-intro text-muted">Support and Training for leaders</p>
                                     <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
-                                    <p>Para promover la buena gobernanza resulta necesario ser 
-capaces de dar apoyo y entrenamiento a los líderes 
-regionales, para asegurar que desarrollen las habilidades 
-requeridas para lidiar con la gran cantidad de retos que 
-tendrán que afrontar una vez que sean electos para cargos 
-públicos.
+                                    <p>To promote good governance, it is necessary to be
+able to support and train leaders
+regional, to ensure that they develop the skills
+required to deal with the myriad of challenges
+they will have to face once they are elected to office
+public.
 
-Este  programa  busca  reclutar  a  lidere  venezolano-
-americanos basándose en elementos como su talento, su    formación    académica    y    la    voluntad    de comprometerse con la restauración de la democracia en Venezuela, así como su capacidad para defender esa causa en los Estados Unidos.
-Una vez terminado el proceso de selección, 
-el grupo elegido recibirá entrenamiento en 
-distintas áreas y uno de ellos tendrá la 
-oportunidad de viajar a Washington DC para 
-una ronda de visitas que incluirán el 
-Congreso, la Organización de Estados 
-Americanos y la Universidad George 
+This program seeks to recruit a Venezuelan leader-
+Americans based on elements such as their talent, their academic training and their willingness to commit to the restoration of democracy in Venezuela, as well as their ability to defend that cause in the United States.
+Once the selection process is finished,
+the chosen group will receive training in
+different areas and one of them will have the
+opportunity to travel to Washington DC to
+a round of visits that will include the
+Congress, the Organization of States
+Americans and George University
 Washington.
 
-Este programa incluye entrenamiento en
-oratoria, negociación, lobby, redes,
-formación y dirección de equipos de trabajo, 
-políticas públicas, historia e instituciones 
-democráticas, dotando así a los 
-participantes de un aprendizaje holístico.
+This program includes training in
+public speaking, negotiation, lobbying, networking,
+formation and management of work teams,
+public policies, history and institutions
+democratic, thus endowing
+participants in holistic learning.
 </p>
                                     <ul class="list-inline">
                                         <li>Date: January 2020</li>
@@ -335,18 +334,18 @@ participantes de un aprendizaje holístico.
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Liderazgo Latinoamericano</h2>
+                                    <h2 class="text-uppercase">Latin American Leadership</h2>
                          <%--           <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>--%>
                                     <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/col11.jpg" alt="" />
-                                    <p>Latinoamérica entró al siglo XXI como una región plenamente democrática con tan solo
-unas pocas excepciones como Cuba. No obstante, el proceso de consolidación institucional ha sido muy desigual, con algunos actores importantes experimentando retrocesos 
-importantes como en el caso de Venezuela y otros desarrollando un importante preso 
-como Chile, Perú o Colombia.
+                                    <p>Latin America entered the 21st century as a fully democratic region with only
+a few exceptions like Cuba. However, the institutional consolidation process has been very uneven, with some important players experiencing setbacks
+important as in the case of Venezuela and others developing an important prisoner
+like Chile, Peru or Colombia.
 
-Un buen liderazgo político puede explicar la mayoría de las historias de éxito de la región, 
-sistemas  estables  de  partidos,  amplios  acuerdos  nacionales  en  materia  de  política 
-económica y un consolidado respeto por el sistema democrático y sus instituciones entre 
-los principales actores, permitió a varios países sacar a millones de personas de la pobreza.
+Good political leadership can explain most of the region's success stories,
+stable party systems, broad national policy agreements
+economic and a consolidated respect for the democratic system and its institutions among
+the main actors, allowed several countries to lift millions of people out of poverty.
  
 
 
@@ -356,16 +355,16 @@ los principales actores, permitió a varios países sacar a millones de personas
 
 
 
-Por otro lado, la deriva hacia regímenes de corte
-populista, encabezada por Venezuela, otrora la
-democracia más sólida de la región, fue eventualmente seguida por otros países, comprobando así que el 
-fenómeno del “outsider” político es uno de los riesgos más importantes para el desarrollo políticas públicas exitosas en Latinoamérica.
-Pero los problemas del continente no empiezan arriba, 
-a lo largo de todos los niveles de gobierno es posible 
-observar que muchos de los líderes y sus equipos están 
-poco preparados para los retos que tienen que afrontar 
-de forma diaria y para la planificación estratégica del 
-futuro.
+On the other hand, the drift towards court regimes
+populist, led by Venezuela, once the
+strongest democracy in the region, was eventually followed by other countries, thus verifying that the
+The phenomenon of the political "outsider" is one of the most important risks for the development of successful public policies in Latin America.
+But the problems of the continent do not start at the top,
+across all levels of government it is possible
+observe that many of the leaders and their teams are
+unprepared for the challenges they have to face
+on a daily basis and for the strategic planning of the
+future.
  
 
 
@@ -376,8 +375,7 @@ futuro.
 
 
 
-Esta  línea  de  investigación  busca  evaluar  el  desempeño  del  liderazgo regional tomando en cuenta factores como el progreso económico y social, el proceso de elaboración de políticas públicas, el respeto por la ley y el apego   al   sistema   democrático,   buscando   así   diseñar   y   recomendar estrategias que los partidos, las instituciones y la sociedad civil para ayudar a mejorar la calidad del liderazgo en Latinoamérica.
-</p>
+This line of research seeks to evaluate the performance of regional leadership taking into account factors such as economic and social progress, the process of making public policies, respect for the law and adherence to the democratic system, thus seeking to design and recommend strategies that parties, institutions and civil society to help improve the quality of leadership in Latin America.</p>
                                     <ul class="list-inline">
                                        <%-- <li>Date: January 2020</li>
                                         <li>Client: Explore</li>
@@ -404,22 +402,22 @@ Esta  línea  de  investigación  busca  evaluar  el  desempeño  del  liderazgo
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Instituciones Democráticas Regionales</h2>
+                                    <h2 class="text-uppercase">Regional Democratic Institutions</h2>
                                     <%--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>--%>
                                     <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/col13.jpg" alt="" />
-                                    <p>Una democracia es tan fuerte como la más débil de sus
-instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir gobiernos formales, con un cierto nivel de 
-institucionalización que pudieran llevar a cabo las principales 
-tareas de un Estado moderno.
+                                    <p>A democracy is only as strong as the weakest of its
+institutions. Latin America struggled during the 19th and 20th centuries to build formal governments, with a certain level of
+institutionalization that could be carried out by the main
+tasks of a modern state.
 
-Este proceso varió en intensidad y alcance a lo largo de la región, 
-pero parecía bien encaminado al inicio de este siglo. Sin embargo, 
-mientras   algunos   países   han   continuado   del   proceso   de 
-fortalecimiento   institucional,   especialmente   en   lo   referido   a 
-prácticas democráticas, resulta evidente que ha habido retrocesos 
-significativos  en  varios  actores  clave  durante  las  últimas  dos 
-décadas,  debido  a  factores  como  el  ascenso  de  regímenes 
-populistas o el mayor poder de los cárteles de la droga.
+This process varied in intensity and scope throughout the region,
+but it seemed well on its way at the beginning of this century. However,
+while some countries have continued the process of
+institutional strengthening, especially with regard to
+democratic practices, it is clear that there have been setbacks
+significant in several key players during the last two
+decades, due to factors such as the rise of regimes
+populists or the greater power of the drug cartels.
  
 
 
@@ -429,13 +427,13 @@ populistas o el mayor poder de los cárteles de la droga.
 
 
 
-Hoy en día Latinoamérica es menos democrática que hace una década. Unas instituciones 
-en continuo proceso de erosión no han sido capaces de encontrar soluciones efectivas a 
-los problemas de muchos países de una región que está experimentando un ciclo 
-económico negativo después de años de fuerte crecimiento a principios de siglo, que 
-permitieron a sus líderes combatir la pobreza, pero también, en muchos casos, acumular 
-poder en detrimento de los contrapesos institucionales y la contraloría democrática.
-Una vez terminado este periodo de gran crecimiento la región quedó en un contexto de reducción de la recaudación, recesión e instituciones debilitadas, incapaces de afrontar los retos que estos problemas han generado.
+Today Latin America is less democratic than it was a decade ago. Some institutions
+in a continuous process of erosion have not been able to find effective solutions to
+the problems of many countries in a region that is experiencing a cycle
+negative economic growth after years of strong growth at the beginning of the century, which
+allowed their leaders to fight poverty, but also, in many cases, to accumulate
+power to the detriment of institutional checks and balances and democratic comptrollership.
+Once this period of great growth was over, the region was left in a context of reduced collection, recession and weakened institutions, unable to face the challenges that these problems have generated.
  
 
 
@@ -445,9 +443,8 @@ Una vez terminado este periodo de gran crecimiento la región quedó en un conte
 
 
 
-Esto ha llevado a una nueva ola de populismos que podría tener la tentación de continuar el proceso de debilitamiento de la democracia y e imperio de la Ley.
-Esta línea de investigación busca estudiar tanto el progreso como los retrocesos que ha experimentado la región en las últimas décadas como una forma de elaborar conclusiones y brindar a los actores más importantes recomendaciones en materia de políticas públicas que les permitan construir instituciones más fuertes y protegiéndolas de amenazas que se posan sobre ellas.
-</p>
+This has led to a new wave of populism that could be tempted to continue the process of weakening democracy and the rule of law.
+This line of research seeks to study both the progress and setbacks that the region has experienced in recent decades as a way to draw conclusions and provide the most important actors with recommendations on public policies that allow them to build stronger institutions and protect them from threats that settle on them.</p>
                                     <ul class="list-inline">
                                        <%-- <li>Date: January 2020</li>
                                         <li>Client: Finish</li>
@@ -474,18 +471,18 @@ Esta línea de investigación busca estudiar tanto el progreso como los retroces
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Crisis Venezolana</h2>
+                                    <h2 class="text-uppercase">Venezuelan Crisis</h2>
                                 <%--    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>--%>
                                     <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/col10.jpg" alt="" />
-                                    <p>La crisis humanitaria de Venezuela y la migración masiva que ha producido es uno de los problemas más importantes de Latinoamérica. Aunque este constituye el asunto más urgente en la actualidad, no es el único problema relacionado con Venezuela.
-El régimen que gobierna el país llegó al poder en 1998, iniciando pronto un proceso de 
-erosión institucional que fue capaz de exportar a otras naciones de la región a través de 
-la ideología y, sobre todo, el financiamiento de actores y movimientos políticos en todo 
-el  continente.  Así,  con  un  ejemplo  claro  de  cómo  proceder  en  la  conquista  y 
-consolidación del poder y el dinero proveniente de los altos precios del petróleo para 
-ayudar a sus aliados, Hugo Chávez se convirtió en una referencia para importantes 
-fuerzas políticas en casi todos los países de la región; convirtiéndose en uno de las más 
-importantes amenazas, si no la más importante, para la democracia regional.
+                                    <p>The humanitarian crisis in Venezuela and the massive migration that it has produced is one of the most important problems in Latin America. Although this is the most urgent matter today, it is not the only problem related to Venezuela.
+The regime that governs the country came to power in 1998, soon beginning a process of
+institutional erosion that was able to export to other nations in the region through
+the ideology and, above all, the financing of political actors and movements in all
+the continent. Thus, with a clear example of how to proceed in the conquest and
+consolidation of power and money from high oil prices to
+helping his allies, Hugo Chávez became a reference for important
+political forces in almost all the countries of the region; becoming one of the most
+major, if not the most important, threats to regional democracy.
  
 
 
@@ -494,20 +491,20 @@ importantes amenazas, si no la más importante, para la democracia regional.
 
 
 
-El deseo del régimen de acumular todo el 
-poder,   en   conjunto   con   su   agenda 
-socialista, conllevó el desmantelamiento 
-de la industria privada en Venezuela a 
-través de    una    combinación    de 
-expropiaciones    masivas    y    subsidios 
-generalizados   para   bienes   importados 
-(permitidos   por   los   altos   ingresos 
-petroleros)   empeorados   por   severos 
-controles  de  precios.  Una  política  que 
-fomentó  el  crecimiento  de  un  enorme 
-aparto burocrático que dio a luz a uno de 
-los sistemas más corruptos que hayan 
-existido en el mundo.
+The regime's desire to accumulate all
+power, in conjunction with your agenda
+socialist, led to the dismantling
+from private industry in Venezuela to
+through a combination of
+mass expropriations and subsidies
+generalized for imported goods
+(allowed by high income
+oil tankers) worsened by severe
+price controls. A policy that
+fostered the growth of a huge
+bureaucratic apparatus that gave birth to one of
+the most corrupt systems ever
+existed in the world.
  
 
 
@@ -516,15 +513,14 @@ existido en el mundo.
 
 
 
-Cuando los precios del petróleo colapsaron, Venezuela ya estaba en una profunda crisis económica debido a la incapacidad del gobierno para asegurar las 
-importaciones necesarias para sostener la actividad del país combinado con una alta inflación. Estos factores llevaron a Venezuela a un colapso económico como ningún otro visto en el mundo sin que mediara un conflicto armado.
-La   crisis   venezolana   es   autoinfligida,   causada   por   un   régimen   corrupto   e 
-incompetente acusado de violaciones graves a los Derechos Humanos e incluso del 
-tráfico de drogas. Esta línea de investigación busca evaluar la situación actual del 
-país, así como el impacto que tiene en Latinoamérica, para proponer vías de 
-actuación   a   otros   actores   regionales,   gobiernos   interesados   y   la   oposición 
-venezolana.
-</p>
+When oil prices collapsed, Venezuela was already in a deep economic crisis due to the inability of the government to insure the
+imports needed to sustain the country's activity combined with high inflation. These factors led Venezuela to an economic collapse unlike any other seen in the world without the mediation of an armed conflict.
+The Venezuelan crisis is self-inflicted, caused by a corrupt and
+incompetent accused of serious violations of Human Rights and even of the
+drug traffic. This line of research seeks to assess the current situation of the
+country, as well as the impact it has on Latin America, to propose ways of
+action to other regional actors, interested governments and the opposition
+Venezuelan.</p>
                                     <ul class="list-inline">
                                         <%--<li>Date: January 2020</li>
                                         <li>Client: Lines</li>

@@ -13,48 +13,56 @@ namespace BlogSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Request.Cookies["articuloC"] != null)
+            if (Response.Cookies["nombreC"].Value == null)
             {
-                string connectionString = "workstation id=colombeia.mssql.somee.com;packet size=4096;user id=colombeia_SQLLogin_1;pwd=4bnjaxxo85;data source=colombeia.mssql.somee.com;persist security info=False;initial catalog=colombeia";
-                string query = "SELECT Articulo, Titulo FROM Blog WHERE Row=@Row";
-
-
-                using (SqlConnection con = new SqlConnection(connectionString))
-                using (SqlCommand cmd = new SqlCommand(query, con))
-                {
-
-                    cmd.Parameters.Add("@Row", SqlDbType.VarChar, 50).Value = Request.Cookies["articuloC"].Value;
-
-
-
-                    con.Open();
-
-
-                    using (SqlDataReader dr = cmd.ExecuteReader())
-                    {
-                        if (dr.Read())
-                        {
-                            string ART = dr.GetFieldValue<string>(0);
-                            string TIT = dr.GetFieldValue<string>(1);
-
-                            Apellido.Value = TIT;
-                            summernote.Value = ART;
-
-                            Response.Cookies["articuloC"].Expires = DateTime.Now.AddDays(-1);
-
-                        }
-
-
-                        dr.Close();
-                    }
-
-                    con.Close();
-                }
+                Response.Redirect("Login.aspx");
             }
             else
             {
+                if (Request.Cookies["articuloC"] != null)
+                {
+                    string connectionString = "workstation id=colombeia.mssql.somee.com;packet size=4096;user id=colombeia_SQLLogin_1;pwd=4bnjaxxo85;data source=colombeia.mssql.somee.com;persist security info=False;initial catalog=colombeia";
+                    string query = "SELECT Articulo, Titulo FROM Blog WHERE Row=@Row";
 
+
+                    using (SqlConnection con = new SqlConnection(connectionString))
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+
+                        cmd.Parameters.Add("@Row", SqlDbType.VarChar, 50).Value = Request.Cookies["articuloC"].Value;
+
+
+
+                        con.Open();
+
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                string ART = dr.GetFieldValue<string>(0);
+                                string TIT = dr.GetFieldValue<string>(1);
+
+                                Apellido.Value = TIT;
+                                summernote.Value = ART;
+
+                                Response.Cookies["articuloC"].Expires = DateTime.Now.AddDays(-1);
+
+                            }
+
+
+                            dr.Close();
+                        }
+
+                        con.Close();
+                    }
+                }
+                else
+                {
+
+                }
             }
+           
             
         
 
@@ -86,6 +94,13 @@ namespace BlogSite
                     }
                 }
             }
+        }
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Cookies["nombreC"].Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies["appellC"].Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies["profeC"].Expires = DateTime.Now.AddDays(-1);
+            Response.Redirect("Login.aspx");
         }
     }
 

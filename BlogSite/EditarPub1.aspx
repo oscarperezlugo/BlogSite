@@ -45,6 +45,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="EditarPub1.aspx">EDITAR</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Usuario.aspx">REGISTRAR</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="EdiUsu.aspx">ACTUALIZAR</a></li>
+                        <li class="nav-item"><asp:LinkButton ID="LinkButton1" runat="server" CssClass="nav-link js-scroll-trigger" OnClick="LinkButton1_Click">Cerrar Sesion</asp:LinkButton></li>
                     </ul>
                 </div>            
         </nav>
@@ -60,7 +61,8 @@
             </div>
           <div class="card-body">
                 <div class="form-row">   
-        <asp:GridView ID="GridView4" runat="server" DataSourceID="SqlDataSource3" AutoGenerateColumns="False" GridLines="None" BackColor="White" BorderStyle="None" BorderWidth="1px" CellPadding="20" ForeColor="Black" CssClass="mGrid" PagerStyle-CssClass="pgr" margin-left="2%" AlternatingRowStyle-CssClass="alt" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="Row" AllowPaging="True" AllowSorting="True">
+                    <div style="width:100%">
+        <asp:GridView ID="GridView4" runat="server" DataSourceID="SqlDataSource3" AutoGenerateColumns="False" GridLines="None" BackColor="White" BorderStyle="None" BorderWidth="1px" CellPadding="20" ForeColor="Black" CssClass="mGrid" PagerStyle-CssClass="pgr" margin-left="2%" AlternatingRowStyle-CssClass="alt" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="Row" AllowPaging="True" AllowSorting="True" >
             <Columns>
                 
                 
@@ -83,7 +85,8 @@
             <SelectParameters>
                 <asp:CookieParameter CookieName="rowC" Name="Usuario" Type="String"></asp:CookieParameter>
                         </SelectParameters>
-                    </asp:SqlDataSource>  
+                    </asp:SqlDataSource> 
+                        </div>
                      </div>
             </div>
           </div>

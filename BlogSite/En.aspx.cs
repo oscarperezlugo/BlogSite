@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 
 namespace BlogSite
 {
-    public partial class _Default : Page
+    public partial class En : Page
     {
         DataTable DET;
         protected void Page_Load(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace BlogSite
         protected void enviar(object sender, EventArgs e)
         {
             string body = "<body>" +
-                   "<h1>"+name.Value+"</h1>" +
+                   "<h1>" + name.Value + "</h1>" +
                    "<h1>" + email.Value + "</h1>" +
                    "<h1>" + phone.Value + "</h1>" +
                    "<h4>" + message.Value + "</h4>" +
@@ -56,7 +56,8 @@ namespace BlogSite
             mail.Body = body;
 
             smtp.Send(mail);
-            //Response.Write(" < script > alert('MENSAJE ENVIADO') </ script > ");
+            //Response.Write(" < script > alert('MESSAGE SENDED') </ script > ");
+
 
         }
         protected void ProductsListView_SelectedIndexChanging(object sender, ListViewSelectEventArgs e)
@@ -80,6 +81,5 @@ namespace BlogSite
 
             Response.Redirect("Lectura.aspx");
         }
-
     }
 }

@@ -52,6 +52,7 @@
             <br />
             <br />
             <p><h2>LOGIN</h2></p>
+                 <center><div style="width:60%">
             <div class="fila col10L">
                 <input class="formulario" placeholder="Correo" id="Correo" type="email" required runat="server"/>            
             </div>                       
@@ -63,6 +64,7 @@
             <div class="fila col10L">
                 <asp:Button class="botonsubmit" value="REGISTRARME" type="submit" runat="server" CssClass="botonsubmit" Text="LOGIN" OnClick="Unnamed1_Click" />            
             </div>
+                     </div></center>
                  <br />
             <br />
             <br />

@@ -147,6 +147,7 @@
     <Content Include="assets\mail\contact_me.js" />
     <Content Include="assets\mail\contact_me.php" />
     <Content Include="assets\mail\jqBootstrapValidation.js" />
+    <Content Include="En.aspx" />
     <Content Include="EditarPub2.aspx" />
     <Content Include="EditarPub1.aspx" />
     <Content Include="Lectura.aspx" />
@@ -222,6 +223,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="En.aspx.cs">
+      <DependentUpon>En.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="En.aspx.designer.cs">
+      <DependentUpon>En.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EditarPub2.aspx.cs">
       <DependentUpon>EditarPub2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

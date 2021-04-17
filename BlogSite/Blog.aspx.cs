@@ -12,13 +12,20 @@ namespace BlogSite
     public partial class Blog : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {            
             Label4.Text = Request.Cookies["nombreC"].Value;
             Label1.Text = Request.Cookies["appellC"].Value;
             Label2.Text = Request.Cookies["profeC"].Value;
             Label3.Text = Request.Cookies["fechaC"].Value;
             //Label5.Text = Request.Cookies["fotoC"].Value;
 
+        }
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Cookies["nombreC"].Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies["appellC"].Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies["profeC"].Expires = DateTime.Now.AddDays(-1);
+            Response.Redirect("Login.aspx");
         }
         protected void Unnamed1_Click(object sender, EventArgs e)
         {

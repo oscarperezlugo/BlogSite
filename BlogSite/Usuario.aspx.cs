@@ -16,22 +16,29 @@ namespace BlogSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Response.Cookies["nombreC"].Value == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
 
+            }
         }
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            string transferente;
+            Byte[] transferente;
             using (BinaryReader reader = new BinaryReader(FileUpload1.PostedFile.InputStream))
             {
                 if (FileUpload1.HasFile == true)
                 {
-                    var Archivod = reader.ReadBytes(FileUpload1.PostedFile.ContentLength);
-                    transferente = Convert.ToBase64String(Archivod);
+                    Byte[] Archivod = reader.ReadBytes(FileUpload1.PostedFile.ContentLength);
+                    transferente = Archivod;
 
                 }
                 else
                 {
-                    transferente = "";
+                    transferente = null;
                 }
             }
                 
@@ -73,7 +80,7 @@ namespace BlogSite
                         querySaveStaff.Parameters.Add("@Apellido", SqlDbType.VarChar).Value = Text2.Value.ToString();
                         querySaveStaff.Parameters.Add("@FechaNac", SqlDbType.DateTime).Value = DateTime.Parse(date.Value);
                         querySaveStaff.Parameters.Add("@Profesion", SqlDbType.VarChar).Value = Apellido.Value.ToString();
-                        querySaveStaff.Parameters.Add("@Foto", SqlDbType.VarChar).Value = transferente;
+                        querySaveStaff.Parameters.Add("@Foto", SqlDbType.VarBinary).Value = transferente;
                         querySaveStaff.Parameters.Add("@Correo", SqlDbType.VarChar).Value = Correo.Value.ToString();
                         querySaveStaff.Parameters.Add("@Pass", SqlDbType.VarChar).Value = Contraseña.Value.ToString();
                         querySaveStaff.Parameters.Add("@Fech", SqlDbType.DateTime).Value = DateTime.Now;                    
@@ -97,6 +104,14 @@ namespace BlogSite
                 Response.Write("<script>alert('LAS CONTRASEÑAS NO COINCIDEN')</script>");
             }
 
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Cookies["nombreC"].Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies["appellC"].Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies["profeC"].Expires = DateTime.Now.AddDays(-1);
+            Response.Redirect("Login.aspx");
         }
     }
 }
