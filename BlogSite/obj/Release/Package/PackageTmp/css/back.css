@@ -95,12 +95,12 @@ div {
 
 li a {
     text-decoration: none;
-    color: white;
+    color: #a1eeee;
 }
 
     li a:hover {
         text-decoration: none;
-        color: red;
+        color: gray;
     }
 
 .baseform {

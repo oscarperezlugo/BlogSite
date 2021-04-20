@@ -41,15 +41,27 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-6" data-aos="zoom-in">
-                        <span class="fa-stack fa-4x">
+                       <%-- <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-balance-scale fa-stack-1x fa-inverse"></i>
-                        </span>
+                        </span>--%>
                         <h4 class="my-3">COLOMBEIA</h4>
-                        <p class="text-muted">Colombeia Research Center inicia su andadura con un fuerte compromiso para promover la democracia y la gobernanza efectiva en Latinoamérica desde la perspectiva del liderazgo político</p>
+                        <p class="text-muted">Colombeia Research Center inicia su andadura con un fuerte compromiso para promover 
+la democracia y la gobernanza efectiva en Latinoamérica desde la perspectiva del 
+liderazgo político, las instituciones democráticas y el proceso de diseño de políticas 
+públicas; tres aspectos fundamentales que han moldeado el actual contexto socio-político 
+de la región.
+
+Estamos inspirados por los pensamientos e ideas de Francisco de Miranda, el hombre 
+universal que lideró los primeros esfuerzos para lograr la independencia de la América 
+española, padre intelectual de una Gran Colombia llamada a ser la patria común de todas 
+las antiguas colonias hispanas del continente, para lo cual creo los archivos de Colombeia 
+como una forma pionera de recabar información sobre la región y emplearla para 
+planificar el futuro
+</p>
                     </div>
                     <div class="col-md-6" data-aos="zoom-in">
-                        <img src="https://colombeia.org/colombeia.org/assets/img/slider2.gif" />
+                        <img src="https://colombeia.org/colombeia.org/assets/img/SliderMini.gif" />
                     </div>                    
                 </div>
             </div>

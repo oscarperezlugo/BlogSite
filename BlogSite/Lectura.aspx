@@ -22,4 +22,37 @@
     <asp:Label ID="Label1" runat="server" ></asp:Label>
     <div id="texto" runat="server"></div>
         </div>
+    <section class="page-section" id="suscribe">
+            <div style="width:80%; margin-left:10%;">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">SUSCRIBE TO OUR NEWSLETTER</h2>
+                    <h3 class="section-subheading text-muted">We are excited to have you here</h3>
+                </div>
+
+                <form id="contactForm" name="sentMessage" novalidate="novalidate" runat="server">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Name *" required="required" data-validation-required-message="Nombre." runat="server"/>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                                                       
+
+                            
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="E-mail *" required="required" data-validation-required-message="E-mail." runat="server"/>
+                                <p class="help-block text-danger"></p>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <asp:Button ID="sendMessageButton" runat="server" Text="SUSCRIBE" CssClass="btn btn-primary btn-xl text-uppercase" OnClick="enviar" type="submit"  />
+                    </div>
+                </form>
+            </div>
+        </section>
 </asp:Content>

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -55,6 +57,33 @@ namespace BlogSite
             {
                 Label1.Text = "Hola";
             }
+
+        }
+        protected void enviar(object sender, EventArgs e)
+        {
+            string body = "<body>" +
+                   "<h1>" + name.Value + "</h1>" +
+                   "<h1>" + email.Value + "</h1>" +                   
+                   "</body>";
+            SmtpClient smtp = new SmtpClient();
+            smtp.EnableSsl = false;
+            smtp.UseDefaultCredentials = false;
+            smtp.Host = "smtp.tarragobrands.somee.com";
+            smtp.Port = 26;
+            smtp.Credentials = new NetworkCredential("noreply@tarragobrands.somee.com", "Otto.123");
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+
+
+
+            MailMessage mail = new MailMessage();
+            mail.From = new MailAddress("noreply@tarragobrands.somee.com", "WEB CRC");
+            mail.To.Add(new MailAddress("info@colombeia.org"));
+            mail.Subject = "Suscripcion Web";
+            mail.IsBodyHtml = true;
+            mail.Body = body;
+
+            smtp.Send(mail);
+            
 
         }
     }
