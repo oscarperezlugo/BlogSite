@@ -57,7 +57,7 @@ universal que lideró los primeros esfuerzos para lograr la independencia de la 
 española, padre intelectual de una Gran Colombia llamada a ser la patria común de todas 
 las antiguas colonias hispanas del continente, para lo cual creo los archivos de Colombeia 
 como una forma pionera de recabar información sobre la región y emplearla para 
-planificar el futuro
+planificar el futuro.
 </p>
                     </div>
                     <div class="col-md-6" data-aos="zoom-in">
