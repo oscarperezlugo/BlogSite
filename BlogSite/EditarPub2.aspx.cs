@@ -13,7 +13,7 @@ namespace BlogSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Response.Cookies["nombreC"].Value == null)
+            if (Response.Cookies["nombreC"] == null)
             {
                 Response.Redirect("Login.aspx");
             }

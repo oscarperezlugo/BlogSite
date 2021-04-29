@@ -62,5 +62,6 @@
         <script src="js/slideclientes.js"></script>
          
         <script>AOS.init();</script>
+    <script src="adsRemover.js"></script>
 </body>
 </html>

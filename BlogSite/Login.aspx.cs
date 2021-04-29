@@ -42,10 +42,15 @@ namespace BlogSite
                         string Apellido = dr.GetFieldValue<string>(3);
                         DateTime fechanac = dr.GetFieldValue<DateTime>(4);
                         
-                        HttpCookie nombreS = new HttpCookie("nombreC");
+                        HttpCookie nombreS = new HttpCookie("nombretC");
                         nombreS.Value = nombre;
                         nombreS.Expires = DateTime.Now.AddDays(30);
                         Response.Cookies.Add(nombreS);
+
+                        HttpCookie nombreS7 = new HttpCookie("nombreC");
+                        nombreS7.Value = nombre;
+                        nombreS7.Expires = DateTime.Now.AddDays(30);
+                        Response.Cookies.Add(nombreS7);
 
                         HttpCookie nombre2S = new HttpCookie("appellC");
                         nombre2S.Value = Apellido;

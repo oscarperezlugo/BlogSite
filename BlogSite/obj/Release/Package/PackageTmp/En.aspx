@@ -13,7 +13,7 @@
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">US</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Research lines</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#opinion">Opinion</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#opinion">Research Papers</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Programs</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Default.aspx">Español</a></li>
@@ -31,56 +31,60 @@
             </div>
         </header>
         
-        <!-- Services-->       
-        <section class="page-section" id="services">
-            <div style="width:80%; margin-left:10%;" >
-                
+        <!-- Services-->   
+        <section class="page-section" id="portfolio">
+            <div style="width:80%; margin-left:10%;">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">US</h2>
-                    <h3 class="section-subheading text-muted">What we do and who we are</h3>
+                    <h2 class="section-heading text-uppercase">OUR PROGRAMS</h2>
+                    <h3 class="section-subheading text-muted">To promote good governance, it is necessary to be able to support and train leaders</h3>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-6" data-aos="zoom-in">
-                       <%-- <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-balance-scale fa-stack-1x fa-inverse"></i>
-                        </span>--%>
-                        <h4 class="my-3">COLOMBEIA</h4>
-                        <p class="text-muted">Colombeia Research Center begins its journey with a strong commitment to promote democracy and effective governance in Latin America from the perspective of political leadership, democratic institutions and the process of designing public policies; three fundamental aspects that have shaped the current socio-political context of the region. We are inspired by the thoughts and ideas of Francisco de Miranda, the universal man who led the first efforts to achieve the independence of Spanish America, intellectual father of a Greater Colombia called to be the common homeland of all the former Hispanic colonies of the continent, for which I create the archives of Colombeia as a pioneering way to gather information about the region and use it to plan for the future.</p>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                               <%-- <div class="portfolio-caption-heading">LEANDER</div>
+                                <div class="portfolio-caption-subheading text-muted">Leadership</div>--%>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6" data-aos="zoom-in">
-                        <img src="https://colombeia.org/colombeia.org/assets/img/SliderMini.gif" />
-                    </div>                    
+                    <%--<div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Explore</div>
+                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                            </div>
+                        </div>
+                    </div>--%>
+                   <%-- <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Finish</div>
+                                <div class="portfolio-caption-subheading text-muted">Identity</div>
+                            </div>
+                        </div>
+                    </div>      --%>                                  
                 </div>
             </div>
         </section>
-    <section class="page-section " id="team">
-            <div style="width:80%; margin-left:10%;">
-                
-                <div class="row">
-                    <div class="col-lg-6" data-aos="flip-left">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/martin.jpg" alt="" />
-                            <h4>Jose Miguel Martin</h4>
-                            <p class="text-muted">GENERAL CONSULTANT, STRATEGIST</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/Josemartinm_"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/Josemartinm_"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="http://www.linkedin.com/in/josemiguelmartinm"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="flip-right">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/col1.jpg" alt="" />
-                            <h4>José Alberto Alves da Rocha</h4>
-                            <p class="text-muted">LANGUAGE STUDENT</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/titoalvess"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/titoalvess/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                            <%--<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-handshake-o"></i></a>--%>
-                        </div>
-                    </div>                    
-                    </div>
-                    </div>   
-        </section>
+        
     <section class="page-section bg-light" id="about">
             <div style="width:80%; margin-left:10%;">
                 <div class="text-center">
@@ -155,7 +159,7 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
     <section class="page-section" id="opinion">
             <div style="width:80%; margin-left:10%;">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">OPINION</h2>
+                    <h2 class="section-heading text-uppercase">RESEARCH PAPERS</h2>
                     <%--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet</h3>--%>
                 </div>
                 <div class="row">
@@ -174,58 +178,58 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
                 </div>
             </div>
         </section>
-        <section class="page-section bg-light" id="portfolio">
-            <div style="width:80%; margin-left:10%;">
+
+        <section class="page-section bf-light" id="services">
+            <div style="width:80%; margin-left:10%;" >
+                
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">OUR PROGRAMS</h2>
-                    <h3 class="section-subheading text-muted">To promote good governance, it is necessary to be able to support and train leaders</h3>
+                    <h2 class="section-heading text-uppercase">US</h2>
+                    <h3 class="section-subheading text-muted">What we do and who we are</h3>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">LEANDER</div>
-                                <div class="portfolio-caption-subheading text-muted">Leadership</div>
-                            </div>
-                        </div>
+                <div class="row text-center">
+                    <div class="col-md-6" data-aos="zoom-in">
+                       <%-- <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-balance-scale fa-stack-1x fa-inverse"></i>
+                        </span>--%>
+                        <h4 class="my-3">COLOMBEIA</h4>
+                        <p class="text-muted">Colombeia Research Center begins its journey with a strong commitment to promote democracy and effective governance in Latin America from the perspective of political leadership, democratic institutions and the process of designing public policies; three fundamental aspects that have shaped the current socio-political context of the region. We are inspired by the thoughts and ideas of Francisco de Miranda, the universal man who led the first efforts to achieve the independence of Spanish America, intellectual father of a Greater Colombia called to be the common homeland of all the former Hispanic colonies of the continent, for which I create the archives of Colombeia as a pioneering way to gather information about the region and use it to plan for the future.</p>
                     </div>
-                    <%--<div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>--%>
-                   <%-- <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>      --%>                                  
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <img src="https://colombeia.org/colombeia.org/assets/img/SliderMini.gif" />
+                    </div>                    
                 </div>
             </div>
         </section>
+    <section class="page-section bg-light" id="team">
+            <div style="width:80%; margin-left:10%;">
+                
+                <div class="row">
+                    <div class="col-lg-6" data-aos="flip-left">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/martin.jpg" alt="" />
+                            <h4>Jose Miguel Martin</h4>
+                            <p class="text-muted">GENERAL CONSULTANT & POLITICAL STRATEGIST</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/Josemartinm_"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/Josemartinm_"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="http://www.linkedin.com/in/josemiguelmartinm"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="flip-right">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/col1.jpg" alt="" />
+                            <h4>José Alberto Alves da Rocha</h4>
+                            <p class="text-muted">RELATIONS & BUSINESS AFFAIRS</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/titoalvess"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/titoalvess/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                            <%--<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-handshake-o"></i></a>--%>
+                        </div>
+                    </div>                    
+                    </div>
+                    </div>   
+        </section>
+
+        
         <!-- About-->    
     <section class="page-section" id="contact">
             <div style="width:80%; margin-left:10%;">
