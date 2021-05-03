@@ -150,6 +150,36 @@
     <Content Include="En.aspx" />
     <Content Include="EditarPub2.aspx" />
     <Content Include="EditarPub1.aspx" />
+    <Content Include="img\1.jpg" />
+    <Content Include="img\476590.jpg" />
+    <Content Include="img\640.jpg" />
+    <Content Include="img\casupo.jpg" />
+    <Content Include="img\casupomediatop.png" />
+    <Content Include="img\close-icon.svg" />
+    <Content Include="img\col1.jpg" />
+    <Content Include="img\col10.jpg" />
+    <Content Include="img\col11.jpg" />
+    <Content Include="img\col13.jpg" />
+    <Content Include="img\col3.jpg" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\header-bg.jpg" />
+    <Content Include="img\images.jpg" />
+    <Content Include="img\iStock-614013614-724x400.jpg" />
+    <Content Include="img\Leander.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\map-image.png" />
+    <Content Include="img\martin.jpg" />
+    <Content Include="img\navbar-logo.svg" />
+    <Content Include="img\Sin título-1.gif" />
+    <Content Include="img\Sintítulo-1.jpg" />
+    <Content Include="img\sl1.png" />
+    <Content Include="img\sl2.png" />
+    <Content Include="img\sl3.png" />
+    <Content Include="img\slider.gif" />
+    <Content Include="img\slider2.gif" />
+    <Content Include="img\SliderMini.gif" />
+    <Content Include="img\thumbs_b_c_1a4d8b4102ebe4d9f5540f5c250569be.jpg" />
+    <Content Include="img\UN0282038.jpg" />
     <Content Include="Lectura.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="css\back.css" />
@@ -176,6 +206,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Blog.aspx" />
+    <Content Include="WebForm1.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="js\scripts.js" />
     <Content Include="js\slideclientes.js" />
@@ -310,6 +341,13 @@
     </Compile>
     <Compile Include="Blog.aspx.designer.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

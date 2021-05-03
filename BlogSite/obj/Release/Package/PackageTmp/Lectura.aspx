@@ -51,7 +51,9 @@
                     <div class="text-center">
                         <div id="success"></div>
                         <asp:Button ID="sendMessageButton" runat="server" Text="SUSCRIBE" CssClass="btn btn-primary btn-xl text-uppercase" OnClick="enviar" type="submit"  />
+                         <asp:Button ID="Button1" runat="server" Text="DOWNLOAD" CssClass="btn btn-primary btn-xl text-uppercase" OnClick="GridView1_SelectedIndexChanged" type="submit"  UseSubmitBehavior="False" />
                     </div>
+                  
                 </form>
             </div>
         </section>

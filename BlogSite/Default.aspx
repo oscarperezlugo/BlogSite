@@ -4,7 +4,7 @@
     <form runat="server">
           <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://colombeia.org/colombeia.org/assets/img/logo.png" alt="" /></a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt="" /></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ml-1"></i>
@@ -96,7 +96,7 @@
                 <ul class="timeline">
                     <li>
                         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/images.jpg" alt="" /></div>
+                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="img/images.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div data-aos="fade-right"><h4>Liderazgo Latinoamericano</h4>
@@ -109,7 +109,7 @@ unas pocas excepciones como Cuba. </p></div>
                     </li>
                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                     <li class="timeline-inverted">
-                        <div class="timeline-image" data-aos="fade-left"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Sintítulo-1.jpg" alt="" /></div>
+                        <div class="timeline-image" data-aos="fade-left"><img class="rounded-circle img-fluid" src="img/Sintítulo-1.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div data-aos="fade-left"><h4>Instituciones Democráticas Regionales</h4>
@@ -123,7 +123,7 @@ instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir 
                     </li>
                     <li>
                         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/col3.jpg" alt="" /></div>
+                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="img/col3.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div data-aos="fade-right"><h4>Crisis Venezolana</h4>
@@ -168,8 +168,8 @@ instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir 
                                  <asp:ListView ID="ListView1" runat="server" OnItemCommand="msg_list_ItemCommand"   >
         <ItemTemplate runat="server">
             <div id="tiendaitem" class="tiendaitem">                
-                    <asp:Image ID="Image1" ImageUrl='<%# "data:image/jpg;base64," + Convert.ToBase64String((byte[])Eval("FotoV"))  %>' runat="server" data-container="body" data-toggle="popover" data-placement="right" width="196px" Height="196px" />                                        
-                    <div id="cajatitulo"><p class="filaitem columnaitem"><h2><asp:label id="titulotiendaweb" runat="server" CssClass="titulotienda" ><%#Eval("Titulo") %></asp:label></h2></p></div>
+                    <asp:Image ID="Image1" ImageUrl='<%# "data:image/jpg;base64," + Convert.ToBase64String((byte[])Eval("Foto"))  %>' runat="server" data-container="body" data-toggle="popover" data-placement="right" width="196px" Height="196px" />                                        
+                    <div id="cajatitulo"><p class="filaitem columnaitem"><h5><asp:label id="titulotiendaweb" runat="server" CssClass="titulotienda" ><%#Eval("Titulo") %></asp:label></h5></p></div>
                     <div class="cajafila"><p class="filaitem columnaitem"><h6><asp:label runat="server" class="cantidadtienda"><%#Eval("Nombre") %></asp:label></h6></p></div>
                     <div class="cajafila"><p class="filaitem columnaitem"><h6><asp:label runat="server" class="categoriatienda"><%#Eval("Fecha") %></asp:label></h6></p></div>
                 <asp:LinkButton ID="SelectButton" runat="server" Text="LEER MAS..." CommandName="Select" CommandArgument='<%#Eval("Titulo")%>' class="botonagregar" />
@@ -209,7 +209,7 @@ planificar el futuro.
 </p>
                     </div>
                     <div class="col-md-6" data-aos="zoom-in">
-                        <img src="https://colombeia.org/colombeia.org/assets/img/SliderMini.gif" />
+                        <img src="img/SliderMini.gif" />
                     </div>                    
                 </div>
             </div>
@@ -220,7 +220,7 @@ planificar el futuro.
                 <div class="row">
                     <div class="col-lg-6" data-aos="flip-left">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/martin.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/martin.jpg" alt="" />
                             <h4>Jose Miguel Martin</h4>
                             <p class="text-muted">CONSULTOR GENERAL Y ESTRATEGA POLITICO</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/Josemartinm_"><i class="fab fa-twitter"></i></a>
@@ -230,7 +230,7 @@ planificar el futuro.
                     </div>
                     <div class="col-lg-6" data-aos="flip-right">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/col1.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/col1.jpg" alt="" />
                             <h4>José Alberto Alves da Rocha</h4>
                             <p class="text-muted">RELACIONES PUBLICAS & RELACIONES EMPRESARIALES</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/titoalvess"><i class="fab fa-twitter"></i></a>
@@ -291,7 +291,7 @@ planificar el futuro.
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -299,7 +299,7 @@ planificar el futuro.
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">LEANDER</h2>
                                     <p class="item-intro text-muted">Apoyo y Entrenamiento a los líderes</p>
-                                    <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="img/Leander.jpg" alt="" />
                                     <p>Para promover la buena gobernanza resulta necesario ser 
 capaces de dar apoyo y entrenamiento a los líderes 
 regionales, para asegurar que desarrollen las habilidades 
@@ -345,7 +345,7 @@ participantes de un aprendizaje holístico.
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -353,7 +353,7 @@ participantes de un aprendizaje holístico.
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Liderazgo Latinoamericano</h2>
                          <%--           <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>--%>
-                                    <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/col11.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="img/col11.jpg" alt="" />
                                     <p>Latinoamérica entró al siglo XXI como una región plenamente democrática con tan solo
 unas pocas excepciones como Cuba. No obstante, el proceso de consolidación institucional ha sido muy desigual, con algunos actores importantes experimentando retrocesos 
 importantes como en el caso de Venezuela y otros desarrollando un importante preso 
@@ -414,7 +414,7 @@ Esta  línea  de  investigación  busca  evaluar  el  desempeño  del  liderazgo
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -422,7 +422,7 @@ Esta  línea  de  investigación  busca  evaluar  el  desempeño  del  liderazgo
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Instituciones Democráticas Regionales</h2>
                                     <%--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>--%>
-                                    <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/col13.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="img/col13.jpg" alt="" />
                                     <p>Una democracia es tan fuerte como la más débil de sus
 instituciones. Latinoamérica luchó durante los siglos XIX y XX para construir gobiernos formales, con un cierto nivel de 
 institucionalización que pudieran llevar a cabo las principales 
@@ -484,7 +484,7 @@ Esta línea de investigación busca estudiar tanto el progreso como los retroces
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -492,7 +492,7 @@ Esta línea de investigación busca estudiar tanto el progreso como los retroces
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Crisis Venezolana</h2>
                                 <%--    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>--%>
-                                    <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/col10.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="img/col10.jpg" alt="" />
                                     <p>La crisis humanitaria de Venezuela y la migración masiva que ha producido es uno de los problemas más importantes de Latinoamérica. Aunque este constituye el asunto más urgente en la actualidad, no es el único problema relacionado con Venezuela.
 El régimen que gobierna el país llegó al poder en 1998, iniciando pronto un proceso de 
 erosión institucional que fue capaz de exportar a otras naciones de la región a través de 
@@ -561,7 +561,7 @@ venezolana.
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">

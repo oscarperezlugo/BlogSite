@@ -86,5 +86,55 @@ namespace BlogSite
             
 
         }
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            using (SqlConnection openCon = new SqlConnection("workstation id=colombeia.mssql.somee.com;packet size=4096;user id=colombeia_SQLLogin_1;pwd=4bnjaxxo85;data source=colombeia.mssql.somee.com;persist security info=False;initial catalog=colombeia"))
+            {
+                string saveStaff = "SELECT [File] FROM Blog WHERE Titulo=@Titulo";
+
+                using (SqlCommand querySaveStaff = new SqlCommand(saveStaff))
+                {
+                    querySaveStaff.Connection = openCon;
+                    querySaveStaff.Parameters.Add("@Titulo", SqlDbType.VarChar).Value = Request.Cookies["tituloC"].Value;
+
+
+                    try
+                    {
+                        openCon.Open();
+                        using (SqlDataReader dr = querySaveStaff.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                string archivo = dr.GetFieldValue<string>(0);
+                                var transporte = Convert.FromBase64String(archivo);
+                                Response.Clear();
+                                Response.ClearHeaders();
+                                Response.ContentType = "application/pdf";
+                                Response.AddHeader("content-disposition", "attachment; filename=" + "" + Request.Cookies["tituloC"].Value +".pdf");
+                                Response.BufferOutput = true; ;
+                                Response.OutputStream.Write(transporte, 0, transporte.Length);
+                                Response.End();
+
+                            }
+                            else
+                            {
+
+                            }
+
+                            dr.Close();
+                        }
+                        openCon.Close();
+
+
+                    }
+                    catch (SqlException ex)
+                    {
+                        Response.Write("Error" + ex);
+                    }
+                }
+            }
+
+        }
     }
 }

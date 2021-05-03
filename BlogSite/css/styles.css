@@ -10124,7 +10124,7 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("https://colombeia.org/colombeia.org/assets/img/slider2.gif");
+    background-image: url("http://colombeiafinal.somee.com/img/slider2.gif");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -10208,7 +10208,7 @@ header.masthead .masthead-heading {
 }
 
 .portfolio-modal .modal-dialog {
-  margin: 1rem;
+  margin: 0rem;
   max-width: 100vw;
 }
 .portfolio-modal .modal-content {
@@ -10432,7 +10432,7 @@ header.masthead .masthead-heading {
 
 section#contact {
     background-color: #212529;
-    background-image: url("https://colombeia.org/colombeia.org/assets/img/476590.jpg");
+    background-image: url("http://colombeiafinal.somee.com/img/476590.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

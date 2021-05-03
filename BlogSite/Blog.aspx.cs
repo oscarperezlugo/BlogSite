@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -37,11 +38,43 @@ namespace BlogSite
         }
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
+            string transferente;
+            byte[] Archivodos;
+            using (BinaryReader reader = new BinaryReader(FileUpload2.PostedFile.InputStream))
+            {
+                if (FileUpload2.HasFile == true)
+                {
+                    var Archivod = reader.ReadBytes(FileUpload2.PostedFile.ContentLength);
+                    transferente = Convert.ToBase64String(Archivod);
+                   
+                   
+                    
+                }
+                else
+                {
+                    transferente = null;
+                }
+               
+            }
+           
+            using (BinaryReader readerdos = new BinaryReader(FileUpload1.PostedFile.InputStream))
+            {
+                if (FileUpload1.HasFile == true)
+                {
+                    Archivodos = readerdos.ReadBytes(FileUpload1.PostedFile.ContentLength);
+                    
+         
+                }
+                else
+                {
+                    Archivodos = null;
+                }
+            }
 
-            
+
             using (SqlConnection openCon = new SqlConnection("workstation id=colombeia.mssql.somee.com;packet size=4096;user id=colombeia_SQLLogin_1;pwd=4bnjaxxo85;data source=colombeia.mssql.somee.com;persist security info=False;initial catalog=colombeia"))
             {
-                string saveStaff = "INSERT into Blog (Titulo, Articulo, Fecha, Usuario) VALUES (@Titulo, @Articulo, @Fecha, @Usuario)";
+                string saveStaff = "INSERT into Blog (Titulo, Articulo, Fecha, Usuario, Foto, [File]) VALUES (@Titulo, @Articulo, @Fecha, @Usuario, @Foto, @File)";
 
                 using (SqlCommand querySaveStaff = new SqlCommand(saveStaff))
                 {
@@ -50,7 +83,8 @@ namespace BlogSite
                     querySaveStaff.Parameters.Add("@Articulo", SqlDbType.VarChar).Value = summernote.Value;
                     querySaveStaff.Parameters.Add("@Fecha", SqlDbType.DateTime).Value = DateTime.Now;
                     querySaveStaff.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = Request.Cookies["rowC"].Value;
-
+                    querySaveStaff.Parameters.Add("@Foto", SqlDbType.VarBinary).Value = Archivodos;
+                    querySaveStaff.Parameters.Add("@File", SqlDbType.VarChar).Value = transferente;
                     try
                     {
                         openCon.Open();

@@ -64,6 +64,17 @@
                     <td><asp:Label ID="Label3" runat="server" Style="font-weight: bold; font-size: 18px;"></asp:Label></td>                    
                 </tr>                
             </table>
+            <table>
+                        <tr>
+                            <td><asp:Label ID="Label5" runat="server" Text="Label" CssClass="formularioDos">PDF </asp:Label></td>
+                            <td><asp:FileUpload ID="FileUpload2" runat="server" CssClass="formularioDos"/></td>                            
+                        </tr>
+                        <tr>
+                            <td><asp:Label ID="Label6" runat="server" Text="Label" CssClass="formularioDos">FOTO </asp:Label></td>
+                            <td><asp:FileUpload ID="FileUpload1" runat="server" CssClass="formularioDos"/></td>                            
+                        </tr>
+                      
+                            </table>
             <div class="fila col10L">
                 <input class="formulario" placeholder="TITULO DEL ARTICULO" id="Apellido" type="text"  runat="server"/>            
             </div>

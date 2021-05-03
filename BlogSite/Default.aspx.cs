@@ -17,7 +17,7 @@ namespace BlogSite
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("workstation id=colombeia.mssql.somee.com;packet size=4096;user id=colombeia_SQLLogin_1;pwd=4bnjaxxo85;data source=colombeia.mssql.somee.com;persist security info=False;initial catalog=colombeia");
-            SqlDataAdapter sda = new SqlDataAdapter("select a.Titulo, b.Nombre, a.Fecha, b.FotoV, a.Row from Blog a join Usuario b on a.Usuario = b.Row", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select a.Titulo, b.Nombre, a.Fecha, a.Foto, a.Row from Blog a join Usuario b on a.Usuario = b.Row", con);
             DataTable dt = new DataTable();
             DET = dt;
             sda.Fill(dt);

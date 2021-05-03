@@ -4,7 +4,7 @@
     <form runat="server">
           <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://colombeia.org/colombeia.org/assets/img/logo.png" alt="" /></a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt="" /></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ml-1"></i>
@@ -45,7 +45,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
+                                <img class="img-fluid" src="img/Leander.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                <%-- <div class="portfolio-caption-heading">LEANDER</div>
@@ -94,7 +94,7 @@
                 <ul class="timeline">
                     <li>
                         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/images.jpg" alt="" /></div>
+                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="img/images.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div data-aos="fade-right"><h4>Latin American Leadership</h4>
@@ -107,7 +107,7 @@ a few exceptions like Cuba. </p></div>
                     </li>
                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                     <li class="timeline-inverted">
-                        <div class="timeline-image" data-aos="fade-left"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/Sintítulo-1.jpg" alt="" /></div>
+                        <div class="timeline-image" data-aos="fade-left"><img class="rounded-circle img-fluid" src="img/Sintítulo-1.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div data-aos="fade-left"><h4>Regional Democratic Institutions</h4>
@@ -121,7 +121,7 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
                     </li>
                     <li>
                         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/col3.jpg" alt="" /></div>
+                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="img/col3.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div data-aos="fade-right"><h4>Venezuelan Crisis</h4>
@@ -132,7 +132,7 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
                             </a>
                     </li>
                     <%--<li class="timeline-inverted">
-                        <div class="timeline-image" data-aos="fade-left"><img class="rounded-circle img-fluid" src="https://colombeia.org/colombeia.org/assets/img/thumbs_b_c_1a4d8b4102ebe4d9f5540f5c250569be.jpg" alt="" /></div>
+                        <div class="timeline-image" data-aos="fade-left"><img class="rounded-circle img-fluid" src="img/thumbs_b_c_1a4d8b4102ebe4d9f5540f5c250569be.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div data-aos="fade-left"><h4>SALUD</h4>
@@ -166,8 +166,8 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
                                  <asp:ListView ID="ListView1" runat="server" OnItemCommand="msg_list_ItemCommand"   >
         <ItemTemplate runat="server">
             <div id="tiendaitem" class="tiendaitem">                
-                    <asp:Image ID="Image1" ImageUrl='<%# "data:image/jpg;base64," + Convert.ToBase64String((byte[])Eval("FotoV"))  %>' runat="server" data-container="body" data-toggle="popover" data-placement="right" width="196px" Height="196px" />                                        
-                    <div id="cajatitulo"><p class="filaitem columnaitem"><h2><asp:label id="titulotiendaweb" runat="server" CssClass="titulotienda" ><%#Eval("Titulo") %></asp:label></h2></p></div>
+                    <asp:Image ID="Image1" ImageUrl='<%# "data:image/jpg;base64," + Convert.ToBase64String((byte[])Eval("Foto"))  %>' runat="server" data-container="body" data-toggle="popover" data-placement="right" width="196px" Height="196px" />                                        
+                    <div id="cajatitulo"><p class="filaitem columnaitem"><h5><asp:label id="titulotiendaweb" runat="server" CssClass="titulotienda" ><%#Eval("Titulo") %></asp:label></h5></p></div>
                     <div class="cajafila"><p class="filaitem columnaitem"><h6><asp:label runat="server" class="cantidadtienda"><%#Eval("Nombre") %></asp:label></h6></p></div>
                     <div class="cajafila"><p class="filaitem columnaitem"><h6><asp:label runat="server" class="categoriatienda"><%#Eval("Fecha") %></asp:label></h6></p></div>
                 <asp:LinkButton ID="SelectButton" runat="server" Text="LEER MAS..." CommandName="Select" CommandArgument='<%#Eval("Titulo")%>' class="botonagregar" />
@@ -196,7 +196,7 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
                         <p class="text-muted">Colombeia Research Center begins its journey with a strong commitment to promote democracy and effective governance in Latin America from the perspective of political leadership, democratic institutions and the process of designing public policies; three fundamental aspects that have shaped the current socio-political context of the region. We are inspired by the thoughts and ideas of Francisco de Miranda, the universal man who led the first efforts to achieve the independence of Spanish America, intellectual father of a Greater Colombia called to be the common homeland of all the former Hispanic colonies of the continent, for which I create the archives of Colombeia as a pioneering way to gather information about the region and use it to plan for the future.</p>
                     </div>
                     <div class="col-md-6" data-aos="zoom-in">
-                        <img src="https://colombeia.org/colombeia.org/assets/img/SliderMini.gif" />
+                        <img src="img/SliderMini.gif" />
                     </div>                    
                 </div>
             </div>
@@ -207,7 +207,7 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
                 <div class="row">
                     <div class="col-lg-6" data-aos="flip-left">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/martin.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/martin.jpg" alt="" />
                             <h4>Jose Miguel Martin</h4>
                             <p class="text-muted">GENERAL CONSULTANT & POLITICAL STRATEGIST</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/Josemartinm_"><i class="fab fa-twitter"></i></a>
@@ -217,7 +217,7 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
                     </div>
                     <div class="col-lg-6" data-aos="flip-right">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="https://colombeia.org/colombeia.org/assets/img/col1.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/col1.jpg" alt="" />
                             <h4>José Alberto Alves da Rocha</h4>
                             <p class="text-muted">RELATIONS & BUSINESS AFFAIRS</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/titoalvess"><i class="fab fa-twitter"></i></a>
@@ -278,7 +278,7 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -286,7 +286,7 @@ institutions. Latin America struggled during the 19th and 20th centuries to buil
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">LEANDER</h2>
                                     <p class="item-intro text-muted">Support and Training for leaders</p>
-                                    <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/Leander.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="img/Leander.jpg" alt="" />
                                     <p>To promote good governance, it is necessary to be
 able to support and train leaders
 regional, to ensure that they develop the skills
@@ -332,7 +332,7 @@ participants in holistic learning.
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -340,7 +340,7 @@ participants in holistic learning.
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Latin American Leadership</h2>
                          <%--           <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>--%>
-                                    <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/col11.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="img/col11.jpg" alt="" />
                                     <p>Latin America entered the 21st century as a fully democratic region with only
 a few exceptions like Cuba. However, the institutional consolidation process has been very uneven, with some important players experiencing setbacks
 important as in the case of Venezuela and others developing an important prisoner
@@ -400,7 +400,7 @@ This line of research seeks to evaluate the performance of regional leadership t
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -408,7 +408,7 @@ This line of research seeks to evaluate the performance of regional leadership t
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Regional Democratic Institutions</h2>
                                     <%--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>--%>
-                                    <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/col13.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="img/col13.jpg" alt="" />
                                     <p>A democracy is only as strong as the weakest of its
 institutions. Latin America struggled during the 19th and 20th centuries to build formal governments, with a certain level of
 institutionalization that could be carried out by the main
@@ -469,7 +469,7 @@ This line of research seeks to study both the progress and setbacks that the reg
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -477,7 +477,7 @@ This line of research seeks to study both the progress and setbacks that the reg
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Venezuelan Crisis</h2>
                                 <%--    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>--%>
-                                    <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/col10.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="img/col10.jpg" alt="" />
                                     <p>The humanitarian crisis in Venezuela and the massive migration that it has produced is one of the most important problems in Latin America. Although this is the most urgent matter today, it is not the only problem related to Venezuela.
 The regime that governs the country came to power in 1998, soon beginning a process of
 institutional erosion that was able to export to other nations in the region through
@@ -545,7 +545,7 @@ Venezuelan.</p>
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="https://colombeia.org/colombeia.org/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
                     <div >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -553,7 +553,7 @@ Venezuelan.</p>
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="https://colombeia.org/colombeia.org/assets/img/portfolio/05-full.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
                                         <li>Date: January 2020</li>
